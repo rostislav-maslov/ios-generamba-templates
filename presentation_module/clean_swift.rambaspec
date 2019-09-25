@@ -1,0 +1,36 @@
+# Template information section
+name: "clean_swift"
+summary: "Clean Swift module template with UIViewController playing as a View."
+author: "Levan Chikvaidze & Nikita Nikitsky"
+version: "0.2.0"
+license: "MIT"
+
+# The declarations for code files
+
+code_files:
+
+# Controller layer
+- { name: Controller/ViewController.swift, path: Code/Controller/viewController.swift.liquid }
+- { name: Controller/ViewControllerImpl.swift, path: Code/Controller/viewControllerImpl.swift.liquid }
+- { name: Controller/ViewControllerListener.swift, path: Code/Controller/viewControllerListener.swift.liquid }
+
+# Interactor layer
+- { name: Interactor/DataStore/DataStore.swift, path: Code/Interactor/DataStore/dataStore.swift.liquid }
+- { name: Interactor/DataStore/DataStoreImpl.swift, path: Code/Interactor/DataStore/dataStoreImpl.swift.liquid }
+- { name: Interactor/Interactor.swift, path: Code/Interactor/interactor.swift.liquid }
+- { name: Interactor/InteractorImpl.swift, path: Code/Interactor/interactorImpl.swift.liquid }
+
+# Models layer
+- { name: Models/View/SomeViewModel.swift, path: Code/Models/View/someViewModel.swift.liquid }
+- { name: Models/View/ViewModel.swift, path: Code/Models/View/viewModel.swift.liquid }
+
+# Module layer
+- { name: Module/Module.swift, path: Code/Module/module.swift.liquid }
+
+# Presenter layer
+- { name: Presenter/Presenter.swift, path: Code/Presenter/presenter.swift.liquid }
+- { name: Presenter/PresenterImpl.swift, path: Code/Presenter/presenterImpl.swift.liquid }
+
+# Router layer
+- { name: Router/Router.swift, path: Code/Router/router.swift.liquid }
+- { name: Router/RouterImpl.swift, path: Code/Router/routerImpl.swift.liquid }
